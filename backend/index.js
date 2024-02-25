@@ -35,6 +35,7 @@ app.delete("/delete/:id", (req, res) => {
       console.log(response);
     })
     .catch((e) => console.log(e));
+  res.send({ message: "Deleted" });
 });
 app.listen(5000, () => {
   console.log("Server started on 5k");
